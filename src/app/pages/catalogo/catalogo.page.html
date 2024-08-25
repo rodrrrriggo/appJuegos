@@ -1,30 +1,89 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar>  
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
     <ion-title>Catalogo</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">catalogo</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-row>
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="#" src="assets/img/black myth.jpg" />
+    <ion-card-header>
+      <ion-card-title>Black Myth: Wukong</ion-card-title>
+      
+    </ion-card-header>
+    <ion-button>Comprar</ion-button>
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/elden.jpg" />
+    <ion-card-header>
+      <ion-card-title>Elden Ring</ion-card-title>
+      
+    </ion-card-header>
+  
+    
+    <ion-button>Comprar</ion-button>
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/cod bo6.jpg" />
+    <ion-card-header>
+      <ion-card-title>COD: Black Ops 6</ion-card-title>
+      
+    </ion-card-header>
+  
+    <ion-button>Pre-Comprar</ion-button>
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/gta5.jpg" />
+    <ion-card-header>
+      <ion-card-title>Grand Theft Auto 5</ion-card-title>
+      
+    </ion-card-header>
+  
+    <ion-button>Comprar</ion-button>
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/eafc.jpg" />
+    <ion-card-header>
+      <ion-card-title>EAFC 25</ion-card-title>
+    </ion-card-header>
+  
+    
+    <ion-button>Comprar</ion-button>
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/f124.jpeg" />
+    <ion-card-header>
+      <ion-card-title>F1 24</ion-card-title>
+      
+    </ion-card-header>
+  
+    
+    <ion-button>Comprar</ion-button>
+  </ion-card>
+
+</ion-row>
+
 </ion-content>
 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
-      <ion-icon name="play-circle"></ion-icon>
-      Juegos Comprados
-    </ion-tab-button>
-    <ion-tab-button tab="library">
-      <ion-icon name="library"></ion-icon>
-      Biblioteca
-    </ion-tab-button>
-    <ion-tab-button tab="search">
-      <ion-icon name="search"></ion-icon>
-      Buscar
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+
+
+
+
+
+
+
+
+
+
