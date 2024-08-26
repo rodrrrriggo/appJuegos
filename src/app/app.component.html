@@ -9,10 +9,11 @@
     <ion-content>
       <ion-list>
         <ion-item button [routerLink]="['/#']">
-          <ion-label>Tú Perfil</ion-label>
+            <ion-label>Tú Perfil</ion-label>
         </ion-item>
-        <ion-item button [routerLink]="['/#']">
-          <ion-label>Carrito</ion-label>
+        <ion-item button [routerLink]="['/home']">
+          <ion-back-button default-href="#"></ion-back-button>
+          <ion-label>Cerrar Sesion</ion-label>
         </ion-item>
       </ion-list>
     </ion-content>
@@ -29,7 +30,5 @@
     <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
   </div>
   
-
-
   <ion-router-outlet></ion-router-outlet>
 </ion-app>

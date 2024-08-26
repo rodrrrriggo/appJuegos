@@ -1,5 +1,9 @@
 .card-imagen{
-    width: 100%;
+    width: 100% auto;
     height: 200px;
     object-fit: contain;
 }
+
+ion-content.background{
+    --ion-background-color:#131313;
+  }

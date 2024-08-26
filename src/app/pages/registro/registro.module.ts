@@ -1,6 +1,7 @@
+//ACA IMPORTAMOS TODO LO NECESARIO PARA FORMULARIOS Y REACTIVE FORMULARIOS
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -12,6 +13,7 @@ import { RegistroPage } from './registro.page';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     IonicModule,
     RegistroPageRoutingModule
   ],

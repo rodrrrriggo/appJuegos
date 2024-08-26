@@ -4,33 +4,35 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content padding class="background">
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
 
-    <ion-card>
-      <ion-list>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <ion-card>
         <ion-list>
           <ion-item>
-            <ion-input label="Ingresa tu Email" type="email" placeholder="nombre@tudominio.com"></ion-input>
+            <ion-input formControlName="email" label="Ingresa tu Email" type="email" placeholder="nombre@tudominio.com"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input label="Ingresa tu contraseña" type="password" value="password"></ion-input>
+            <ion-input formControlName="password" label="Ingresa tu contraseña" type="password" placeholder="password"></ion-input>
           </ion-item>
         </ion-list>
-      </ion-list>
-    </ion-card>
-    
-    <ion-button [routerLink]="['/registro']">Registrate</ion-button>
-    <ion-button [routerLink]="['/catalogo']">Ingresar</ion-button>
-    
-  </div>
+      </ion-card>
+      
+      <ion-button [routerLink]="['/registro']">Registrate</ion-button>
+      <ion-button type="submit">Ingresar</ion-button>
+    </form>
 
+  </div>
 </ion-content>
+</ion-content>
+
 
 
