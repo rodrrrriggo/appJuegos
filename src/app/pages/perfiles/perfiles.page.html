@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Tú Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tú Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+
+<div id="container">
+  
+  <ion-label>Modifica tu perfil</ion-label>
+  <ion-card>
+  <form [formGroup]="perfilesForm" (ngSubmit)="onSave()">
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit">Guardar</ion-button>
+
+    <ion-item button [routerLink]="['/catalogo']">
+      <ion-back-button default-href="#"></ion-back-button>
+      <ion-label>Regresar</ion-label>
+    </ion-item>
+
+  </form>
+</ion-card>
+</div>

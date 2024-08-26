@@ -8,7 +8,10 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item button [routerLink]="['/#']">
+        <ion-item button [routerLink]="['/perfiles']">
+          <ion-button>
+            <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+          </ion-button>
             <ion-label>Tú Perfil</ion-label>
         </ion-item>
         <ion-item button [routerLink]="['/home']">

@@ -27,6 +27,11 @@ const routes: Routes = [
     path: 'notfound',
     loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  {
+    path: 'perfiles',
+    loadChildren: () => import('./pages/perfiles/perfiles.module').then( m => m.PerfilesPageModule)
+  },
+
   
 
   

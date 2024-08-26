@@ -52,11 +52,11 @@ export class LoginPage implements OnInit {
           localStorage.setItem('isLoggedIn', 'true');
           this.router.navigate(['/catalogo']);
         } else {
-          alert('Por favor, completa todos los campos correctamente.');
+          alert('Email o contraseña incorrectos.');
         }
       }, 1000); // Tiempo de simulación
     } else {
-      alert('Email o contraseña incorrectos.');
+      alert('Por favor, completa todos los campos correctamente.');
     }
   }
 }

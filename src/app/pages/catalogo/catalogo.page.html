@@ -8,8 +8,9 @@
 </ion-header>
 
 
-<ion-content padding class="background">
+
 <ion-content [fullscreen]="true">
+  <ion-content padding class="background">
   
   <ion-row>
   <ion-card class="card1">
@@ -102,6 +103,32 @@
     
   </ion-card>
 
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/gta4.jpg" />
+    <ion-card-header>
+      <ion-card-title>GTA 4: Episodes From Liberty City</ion-card-title>
+      <ion-card-subtitle>19,999</ion-card-subtitle>
+    </ion-card-header>
+  
+    
+    <ion-button>Comprar</ion-button>
+
+    
+  </ion-card>
+
+  <ion-card class="card1">
+    <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/morales.jpg" />
+    <ion-card-header>
+      <ion-card-title>Spider-man: Miles Morales</ion-card-title>
+      <ion-card-subtitle>19,999</ion-card-subtitle>
+    </ion-card-header>
+  
+    
+    <ion-button>Comprar</ion-button>
+
+    
+  </ion-card>
+
 </ion-row>
 
 </ion-content>
@@ -109,9 +136,24 @@
 
 
 <ion-footer [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Footer</ion-title>
-  </ion-toolbar>
+
+  
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="play-circle"></ion-icon>
+        Los Mas Jugados
+      </ion-tab-button>
+      <ion-tab-button tab="library">
+        <ion-icon name="library"></ion-icon>
+        Comprados
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Buscar
+      </ion-tab-button>
+    </ion-tab-bar>
+
+
 </ion-footer>
 
 
